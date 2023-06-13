@@ -1,18 +1,21 @@
 export default {
-  name: 'portraits',
-  title: 'Portraits',
+  name: 'pictures',
+  title: 'Pictures',
   type: 'document',
   fields: [
     {
       name: 'image',
       title: 'Image',
-      type: 'array',
-      of: [{type: 'image'}],
+      type: 'image',
       options: {
         hotspot: true,
       },
     },
-
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+    },
     {
       name: 'category',
       title: 'Category',

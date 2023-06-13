@@ -1,5 +1,3 @@
-import landscape from './landscape'
-import portraits from './portraits'
-import film from './film'
+import gallery from './gallery'
 
-export const schemaTypes = [landscape, portraits, film]
+export const schemaTypes = [gallery]
