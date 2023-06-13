@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -9,8 +10,9 @@ const poppins = Poppins({
 const Layout = ({ children }) => {
   return (
     <div className={poppins.className}>
-    <Navbar/>
+      <Navbar />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
