@@ -5,11 +5,11 @@ import { urlFor } from "@/lib/client";
 
 export default function Home({ pictures }) {
   return (
-    <main>
-      <div className='grid sm:grid-cols-3'>
+    <main className='p-5 sm:p-8'>
+      <div className='columns-1 gap-5 sm:columns-2  md:columns-3 lg:columns-4 '>
         {pictures?.map((picture) => (
-          <div key={picture.id}>
-            <img src={urlFor(picture.image)} alt='/' />
+          <div key={picture.id} className='aspect-video 4-8'>
+            <img src={urlFor(picture.image)} alt='/' className='rounded-lg mt-[2rem]' />
           </div>
         ))}
       </div>
@@ -18,7 +18,7 @@ export default function Home({ pictures }) {
 }
 
 export const getServerSideProps = async () => {
-  const query = `*[_type=='pictures'][0...10]`;
+  const query = `*[_type=='pictures'][0...20]`;
   const pictures = await client.fetch(query);
 
   //console.log(pictures);
