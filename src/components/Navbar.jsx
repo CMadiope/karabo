@@ -95,7 +95,7 @@ const Navbar = () => {
       ${
         nav
           ? "translate-x-0 transition ease-in-out duration-300"
-          : "translate-x-full transition ease-in-out duration-300"
+          : "translate-x-[1000vw] transition ease-in-out duration-300"
       }
       `}
         ref={navRef}
