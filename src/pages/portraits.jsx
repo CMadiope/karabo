@@ -8,7 +8,7 @@ const Portraits = ({pictures}) => {
       <h3 className='uppercase py-5 font-bold text-2xl text-center'>
         Portraits
       </h3>
-      <div className='py-10 columns-1 gap-10 sm:columns-2  md:columns-3 lg:columns-4 max-sm:px-10'>
+      <div className='py-10 columns-1 gap-10 sm:columns-2  md:columns-3 lg:columns-4 max-sm:px-6'>
         {pictures?.map((picture) => (
           <div key={picture._id} className=''>
             <img src={urlFor(picture.image)} alt='/' className=' mt-[2rem]' />
