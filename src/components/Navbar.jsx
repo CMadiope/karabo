@@ -91,11 +91,11 @@ const Navbar = () => {
 
       {/* mobile nav */}
       <div
-        className={`fixed md:hidden h-screen top-0 right-0 z-20 bg-white w-[250px] overflow-hidden duration-300
+        className={`fixed md:hidden h-screen  top-0 right-0 z-20 bg-white w-[250px] overflow-hidden duration-300
       ${
         nav
           ? "translate-x-0 transition ease-in-out duration-300"
-          : "translate-x-[1000vw] transition ease-in-out duration-300"
+          : "translate-x-full transition ease-in-out duration-300 hidden"
       }
       `}
         ref={navRef}
