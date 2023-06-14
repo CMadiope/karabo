@@ -16,11 +16,17 @@ const Layout = ({ children }) => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
+  useEffect(() => {
+    nav
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [nav]);
+
   return (
-    <div className={poppins.className}>
-      <div className={`${nav ? "mobile " : ""} min-h-screen`}>
+    <div className='overflow-x-hidden'>
+      <div className={poppins.className}>
         <Navbar nav={nav} setNav={setNav} />
-        <main >{children}</main>
+        <main>{children}</main>
         <button
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

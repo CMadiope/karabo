@@ -5,13 +5,12 @@
 body {
   background-color: whitesmoke;
   
+}.container {
+  overflow-y: hidden;
 }
-.mobile body {
-  overflow: hidden !important;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: none;
-
-}
+/* * {
+  outline: 1px solid red;
+} */
 
 @layer base {
   li {

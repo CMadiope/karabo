@@ -30,7 +30,7 @@ const Navbar = ({ nav, setNav }) => {
   }, []);
 
   return (
-    <nav className=' bg-[#f5f5f5] drop-shadow-md text-black'>
+    <nav className=' bg-[#f5f5f5] drop-shadow-md text-black min-w-full'>
       <div className='flex justify-between px-6 py-4 items-center'>
         <Link
           href='/'
@@ -90,13 +90,9 @@ const Navbar = ({ nav, setNav }) => {
 
       {/* mobile nav */}
       <div
-        className={`fixed md:hidden h-screen  top-0 right-0 z-30 bg-white w-[250px] overflow-y-hidden duration-300
-      ${
-        nav
-          ? "translate-x-0 transition ease-in-out duration-300 overscroll-none"
-          : "translate-x-full transition ease-in-out duration-300 hidden"
-      }
-      `}
+        className={`fixed h-screen top-0 right-0 z-20  bg-white w-[250px] sm:w-[320px] ease-in-out duration-300 overflow-y-scroll md:hidden ${
+          nav ? "translate-x-0" : "translate-x-full"
+        }`}
         ref={navRef}
       >
         <div
