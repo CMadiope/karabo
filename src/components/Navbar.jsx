@@ -31,8 +31,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-50 bg-[#f5f5f5] drop-shadow-xl mb-28'>
-      <div className='flex justify-between p-6 items-center'>
+    <nav className=' bg-[#f5f5f5] drop-shadow-md text-black'>
+      <div className='flex justify-between px-6 py-4 items-center'>
         <Link
           href='/'
           className='uppercase font-semibold text-lg md:text-xl lg:text-2xl flex flex-col '
@@ -41,7 +41,7 @@ const Navbar = () => {
           <h1>Photographer & Derector</h1>
         </Link>
         <div className=''>
-          <ul className='hidden md:flex gap-6'>
+          <ul className='hidden md:flex gap-6 text-black'>
             <li>
               <Link
                 href='/about'

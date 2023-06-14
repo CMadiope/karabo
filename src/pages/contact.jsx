@@ -1,8 +1,26 @@
 import React from "react";
+import Head from "next/head";
 
 const Contact = () => {
   return (
     <div id='contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+      <Head>
+        <title>Karabo Mdluli | Contact</title>
+        <meta
+          name='description'
+          content='Phone:+27 65 528 6223 Get a Quote Facebook Twitter Youtube. Your premier destination for stunning personal, wedding videography and photography, photographer and art director. Based in Johannesburg South Africa. Film photography. portrait. family portrait. Email:karabo.mdluli@gmail.com. 135 Daisy Street, Sandton'
+          key='desc'
+        />
+        <meta property='og:locale' content='en_Us' />
+        <meta
+          property='og:title'
+          content='title for photographer and art director'
+        />
+        <meta
+          property='og:description'
+          content='description for photographer and art director. If oyu want family portraits, you came to the right place'
+        />
+      </Head>
       <h1 className='py-4 text-4xl font-bold text-center text-[#111]'>
         Contact
       </h1>
