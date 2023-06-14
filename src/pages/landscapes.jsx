@@ -5,7 +5,7 @@ import { urlFor } from "@/lib/client";
 
 const Landscapes = ({ pictures }) => {
   return (
-    <main className='p-5 sm:p-8 pb-12'>
+    <main className=' pb-12'>
       <Head>
         <title>Karabo Mdluli | Landscapes</title>
         <meta
@@ -26,7 +26,7 @@ const Landscapes = ({ pictures }) => {
       <h3 className='uppercase py-5 font-bold text-2xl text-center'>
         Landscapes
       </h3>
-      <div className='py-4 columns-1 gap-10 sm:columns-2  md:columns-3 lg:columns-4 max-sm:px-6'>
+      <div className='py-4 columns-1 gap-10 sm:columns-2  md:columns-3 lg:columns-4 max-sm:px-6 sm:px-8'>
         {pictures?.map((picture) => (
           <div key={picture._id} className=''>
             <img src={urlFor(picture.image)} alt='/' className=' mt-[2rem]' />
