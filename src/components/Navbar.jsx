@@ -5,8 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
+const Navbar = ({ nav, setNav }) => {
   const [clickOutSide, setClickOutSide] = useState(false);
   const pathname = usePathname();
 
@@ -38,7 +37,7 @@ const Navbar = () => {
           className='uppercase font-semibold text-lg md:text-xl lg:text-2xl flex flex-col '
         >
           <h1>Karabo Mdluli</h1>
-          <h1>Photographer & Derector</h1>
+          <h1>Photographer & Director</h1>
         </Link>
         <div className=''>
           <ul className='hidden md:flex gap-6 text-black'>
@@ -91,10 +90,10 @@ const Navbar = () => {
 
       {/* mobile nav */}
       <div
-        className={`fixed md:hidden h-screen  top-0 right-0 z-20 bg-white w-[250px] overflow-hidden duration-300
+        className={`fixed md:hidden h-screen  top-0 right-0 z-30 bg-white w-[250px] overflow-y-hidden duration-300
       ${
         nav
-          ? "translate-x-0 transition ease-in-out duration-300"
+          ? "translate-x-0 transition ease-in-out duration-300 overscroll-none"
           : "translate-x-full transition ease-in-out duration-300 hidden"
       }
       `}

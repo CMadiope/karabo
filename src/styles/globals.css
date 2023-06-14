@@ -4,6 +4,13 @@
 
 body {
   background-color: whitesmoke;
+  
+}
+.mobile body {
+  overflow: hidden !important;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: none;
+
 }
 
 @layer base {
@@ -11,3 +18,5 @@ body {
     @apply hover:border-b-2 border-black pb-1 cursor-pointer transition;
   }
 }
+
+
