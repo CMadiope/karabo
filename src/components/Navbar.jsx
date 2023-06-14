@@ -102,11 +102,11 @@ const Navbar = ({ nav, setNav }) => {
           <RxCross2 size={30} />
         </div>
         <div className='flex text-center font-semibold flex-col gap-6 px-10 py-10 text-xl'>
-          <Link href='/about'>About</Link>
-          <Link href='/film'>Film</Link>
-          <Link href='/landscapes'>Landscapes</Link>
-          <Link href='/portraits'>Portraits</Link>
-          <Link href='/contact'>Contact</Link>
+          <Link href='/about' onClick={handleNav}>About</Link>
+          <Link href='/film' onClick={handleNav}>Film</Link>
+          <Link href='/landscapes' onClick={handleNav}>Landscapes</Link>
+          <Link href='/portraits' onClick={handleNav}>Portraits</Link>
+          <Link href='/contact' onClick={handleNav}>Contact</Link>
         </div>
       </div>
     </nav>
