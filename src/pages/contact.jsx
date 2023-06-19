@@ -25,7 +25,7 @@ const Contact = () => {
         Contact
       </h1>
       <form
-        action='https://getform.io/f/ce1029eb-5085-46bb-a1c1-a664648f23cc'
+        action='https://getform.io/f/83352619-7e83-48fb-a096-de3a8d35ad0a'
         method='POST'
         encType='multipart/form-data'
       >
